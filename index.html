@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1>CRUD</h1>
+    
+    <input type="text" id="dataInput" placeholder="Introduce información">
+    <button onclick="addData()">Agregar Registro</button>
+    <button onclick="showAllData()">Mostrar Todos los Registros</button>
+    <div id="allDataDisplay"></div>
+
+    <input type="text" id="updateIdInput" placeholder="ID para editar">
+    <input type="text" id="updateDataInput" placeholder="Nuevo dato">
+    <button onclick="updateData()">Actualizar Registro</button>
+
+    <input type="text" id="deleteIdInput" placeholder="ID para eliminar">
+    <button onclick="deleteData()">Eliminar Registro</button>
+
+    <input type="text" id="singleIdInput" placeholder="ID para consultar">
+    <button onclick="showSingleData()">Consultar Registro Individual</button>
+    <div id="singleDataDisplay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
